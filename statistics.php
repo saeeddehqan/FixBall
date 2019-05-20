@@ -124,7 +124,7 @@ if(empty($_COOKIE['fixball'])){
 								<div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
 									<?php 
 									
-										$sql = "SELECT goals,name FROM `gamers` ORDER BY `gamers`.`goals` ASC";
+										$sql = "SELECT goals,name FROM `gamers` ORDER BY `gamers`.`goals`DESC";
 										$resps = pdoConnect($sql);
 										echo '<div class="w3-white w3-padding notranslate w3-padding-16 validate-input m-b-16 flex-sb flex-w">
 											<table id="customers">
